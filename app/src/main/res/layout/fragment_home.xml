@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+        <android.support.v7.widget.SearchView
+            android:id="@+id/home_search_view"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:queryHint="検索"
+            android:foregroundGravity="center_horizontal">
+
+
+        </android.support.v7.widget.SearchView>
+        <!--<com.arlib.floatingsearchview.FloatingSearchView-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:id="@+id/home_search_view"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:floatingSearch_searchBarMarginLeft="0dp"-->
+            <!--app:floatingSearch_searchBarMarginTop="0dp"-->
+            <!--app:floatingSearch_searchBarMarginRight="0dp"-->
+            <!--app:floatingSearch_searchHint="投票箱を検索"-->
+            <!--app:floatingSearch_suggestionsListAnimDuration="250"-->
+            <!--app:floatingSearch_showSearchKey="false"-->
+            <!--app:floatingSearch_leftActionMode="showHamburger"-->
+            <!--app:floatingSearch_close_search_on_keyboard_dismiss="true"/>-->
+        <!--<com.lapism.searchview.widget.SearchView-->
+            <!--app:layout_behavior="@string/search_behavior"-->
+            <!--app:search_hint="投票箱を検索"-->
+            <!--app:search_elevation="1dp"-->
+            <!--android:id="@+id/home_search_view"-->
+            <!--android:layout_width="match_parent"-->
+            <!--app:search_shadow="false"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:foregroundGravity="center_horizontal">-->
+
+        <!--</com.lapism.searchview.widget.SearchView>-->
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/top_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="3dp"
+            >
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/categories_header_recycle_view"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/post_recycle_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/top_menu">
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>
